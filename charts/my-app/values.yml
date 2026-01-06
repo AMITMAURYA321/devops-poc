@@ -1,0 +1,15 @@
+# values.yaml
+replicaCount: 2
+
+image:
+  repository: my-poc-app
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+# ArgoCD configuration placeholder
+argocd:
+  enabled: true
